@@ -1,0 +1,407 @@
+[
+  {
+    "id": "v1",
+    "category": "vocabulary",
+    "question_german": "Welches Wort passt? Ich trinke meinen Kaffee mit _______.",
+    "question_english_hint": "Which word fits? I drink my coffee with _______.",
+    "options": ["Apfel", "Wasser", "Milch", "Brot"],
+    "correct_answer": "Milch",
+    "explanation": "'Milch' means milk. 'Brot' is bread, 'Apfel' is apple."
+  },
+  {
+    "id": "v2",
+    "category": "vocabulary",
+    "question_german": "Heute ist Freitag. Morgen ist _______.",
+    "question_english_hint": "Today is Friday. Tomorrow is _______.",
+    "options": ["Samstag", "Donnerstag", "Montag", "Sonntag"],
+    "correct_answer": "Samstag",
+    "explanation": "'Samstag' is Saturday. 'Donnerstag' is Thursday, 'Sonntag' is Sunday."
+  },
+  {
+    "id": "v3",
+    "category": "vocabulary",
+    "question_german": "Wo kauft man Medikamente? In der _______.",
+    "question_english_hint": "Where do you buy medicine? In the _______.",
+    "options": ["Post", "Schule", "Apotheke", "Bäckerei"],
+    "correct_answer": "Apotheke",
+    "explanation": "'Apotheke' is pharmacy. 'Bäckerei' is bakery, 'Post' is post office."
+  },
+  {
+    "id": "v4",
+    "category": "vocabulary",
+    "question_german": "Der Zug fährt ab am _______.",
+    "question_english_hint": "The train departs at the _______.",
+    "options": ["Supermarkt", "Bahnhof", "Flughafen", "Krankenhaus"],
+    "correct_answer": "Bahnhof",
+    "explanation": "'Bahnhof' means train station. 'Flughafen' is airport, 'Krankenhaus' is hospital (not typically used for departures)."
+  },
+  {
+    "id": "v5",
+    "category": "vocabulary",
+    "question_german": "Die Tochter von meiner Mutter ist meine _______.",
+    "question_english_hint": "The daughter of my mother is my _______.",
+    "options": ["Frau", "Oma", "Tante", "Schwester"],
+    "correct_answer": "Schwester",
+    "explanation": "'Schwester' means sister. 'Frau' is wife/woman, 'Oma' is grandmother."
+  },
+  {
+    "id": "v6",
+    "category": "vocabulary",
+    "question_german": "Ich bin krank. Mein _______ tut weh.",
+    "question_english_hint": "I am sick. My _______ hurts.",
+    "options": ["Kopf", "Schuh", "Stuhl", "Tisch"],
+    "correct_answer": "Kopf",
+    "explanation": "'Kopf' means head. 'Schuh' is shoe."
+  },
+  {
+    "id": "v7",
+    "category": "vocabulary",
+    "question_german": "Es ist kalt. Ich brauche eine _______.",
+    "question_english_hint": "It is cold. I need a _______.",
+    "options": ["Buch", "Jacke", "Sonnenbrille", "Tasche"],
+    "correct_answer": "Jacke",
+    "explanation": "'Jacke' means jacket."
+  },
+  {
+    "id": "v8",
+    "category": "vocabulary",
+    "question_german": "Wir essen Fleisch mit _______.",
+    "question_english_hint": "We are eating meat with _______.",
+    "options": ["Gemüse", "Saft", "Tee", "Wasser"],
+    "correct_answer": "Gemüse",
+    "explanation": "'Gemüse' means vegetables."
+  },
+  {
+    "id": "v9",
+    "category": "vocabulary",
+    "question_german": "Zum Bezahlen gehe ich an die _______.",
+    "question_english_hint": "To pay, I go to the _______.",
+    "options": ["Fenster", "Tür", "Kasse", "Wand"],
+    "correct_answer": "Kasse",
+    "explanation": "'Kasse' is the checkout or cash register."
+  },
+  {
+    "id": "v10",
+    "category": "vocabulary",
+    "question_german": "Ein Jahr hat zwölf _______.",
+    "question_english_hint": "A year has twelve _______.",
+    "options": ["Tage", "Stunden", "Wochen", "Monate"],
+    "correct_answer": "Monate",
+    "explanation": "'Monate' means months. 'Wochen' is weeks."
+  },
+  {
+    "id": "v11",
+    "category": "vocabulary",
+    "question_german": "Mein Bein tut weh. Ich brauche einen _______.",
+    "question_english_hint": "My leg hurts. I need a _______.",
+    "options": ["Mechaniker", "Verkäufer", "Arzt", "Lehrer"],
+    "correct_answer": "Arzt",
+    "explanation": "'Arzt' is doctor. 'Verkäufer' is salesperson."
+  },
+  {
+    "id": "v12",
+    "category": "vocabulary",
+    "question_german": "Welches Wort passt? Ich schlafe im _______.",
+    "question_english_hint": "Which word fits? I sleep in the _______.",
+    "options": ["Kühlschrank", "Bett", "Herd", "Schrank"],
+    "correct_answer": "Bett",
+    "explanation": "'Bett' is bed. 'Kühlschrank' is fridge."
+  },
+  {
+    "id": "v13",
+    "category": "vocabulary",
+    "question_german": "Ich möchte einen Brief schicken. Ich brauche eine _______.",
+    "question_english_hint": "I want to send a letter. I need a _______.",
+    "options": ["Fahrkarte", "Rechnung", "Zeitung", "Briefmarke"],
+    "correct_answer": "Briefmarke",
+    "explanation": "'Briefmarke' means postage stamp."
+  },
+  {
+    "id": "v14",
+    "category": "vocabulary",
+    "question_german": "Tomaten sind rot. Bananen sind _______.",
+    "question_english_hint": "Tomatoes are red. Bananas are _______.",
+    "options": ["blau", "gelb", "grün", "rot"],
+    "correct_answer": "gelb",
+    "explanation": "'gelb' means yellow."
+  },
+  {
+    "id": "v15",
+    "category": "vocabulary",
+    "question_german": "Auf _______! Bis morgen!",
+    "question_english_hint": "Goodbye! See you tomorrow!",
+    "options": ["Bitte", "Entschuldigung", "Hallo", "Wiedersehen"],
+    "correct_answer": "Wiedersehen",
+    "explanation": "'Auf Wiedersehen' is the standard phrase for goodbye."
+  },
+  {
+    "id": "g1",
+    "category": "grammar",
+    "question_german": "Er _______ aus Spanien.",
+    "question_english_hint": "He _______ from Spain.",
+    "options": ["kommen", "kommst", "komme", "kommt"],
+    "correct_answer": "kommt",
+    "explanation": "The 3rd person singular (er/sie/es) conjugation of 'kommen' is 'kommt'."
+  },
+  {
+    "id": "g2",
+    "category": "grammar",
+    "question_german": "Ich _______ einen Bruder.",
+    "question_english_hint": "I _______ a brother.",
+    "options": ["habe", "haben", "hast", "hat"],
+    "correct_answer": "habe",
+    "explanation": "The 1st person singular conjugation of 'haben' is 'habe'."
+  },
+  {
+    "id": "g3",
+    "category": "grammar",
+    "question_german": "Wie alt _______ Sie?",
+    "question_english_hint": "How old _______ you? (formal)",
+    "options": ["seid", "sind", "sein", "bist"],
+    "correct_answer": "sind",
+    "explanation": "With the formal 'Sie', the verb 'sein' conjugates as 'sind'."
+  },
+  {
+    "id": "g4",
+    "category": "grammar",
+    "question_german": "Wir essen einen Apfel. _______ Apfel ist lecker.",
+    "question_english_hint": "We are eating an apple. _______ apple is tasty.",
+    "options": ["Das", "Den", "Der", "Die"],
+    "correct_answer": "Der",
+    "explanation": "'Apfel' is masculine, so the nominative article is 'Der'."
+  },
+  {
+    "id": "g5",
+    "category": "grammar",
+    "question_german": "Ich brauche _______ Stift.",
+    "question_english_hint": "I need a pen. ('Stift' is masculine)",
+    "options": ["ein", "einem", "eine", "einen"],
+    "correct_answer": "einen",
+    "explanation": "The verb 'brauchen' takes the accusative case. For masculine nouns, 'ein' becomes 'einen'."
+  },
+  {
+    "id": "g6",
+    "category": "grammar",
+    "question_german": "_______ wohnst du?",
+    "question_english_hint": "_______ do you live?",
+    "options": ["Was", "Wer", "Wo", "Wie"],
+    "correct_answer": "Wo",
+    "explanation": "'Wo' means where. 'Wer' means who, 'Wie' means how."
+  },
+  {
+    "id": "g7",
+    "category": "grammar",
+    "question_german": "Das ist nicht mein Buch. Ich habe _______ Buch.",
+    "question_english_hint": "That is not my book. I have _______ book.",
+    "options": ["kein", "keine", "keinen", "nicht"],
+    "correct_answer": "kein",
+    "explanation": "To negate a noun with an indefinite or no article (like Buch/neuter), use 'kein'."
+  },
+  {
+    "id": "g8",
+    "category": "grammar",
+    "question_german": "Der Film beginnt _______ 20:00 Uhr.",
+    "question_english_hint": "The movie starts _______ 8:00 PM.",
+    "options": ["am", "im", "um", "von"],
+    "correct_answer": "um",
+    "explanation": "Use the preposition 'um' for specific times on the clock."
+  },
+  {
+    "id": "g9",
+    "category": "grammar",
+    "question_german": "Ich fahre _______ Zug nach Berlin.",
+    "question_english_hint": "I am traveling to Berlin _______ train.",
+    "options": ["mit das", "mit dem", "mit den", "mit der"],
+    "correct_answer": "mit dem",
+    "explanation": "'Zug' is masculine (der). 'mit' requires the dative case, so 'der' changes to 'dem'."
+  },
+  {
+    "id": "g10",
+    "category": "grammar",
+    "question_german": "Peter _______ sehr gut Deutsch.",
+    "question_english_hint": "Peter _______ German very well.",
+    "options": ["spreche", "sprechen", "spricht", "sprecht"],
+    "correct_answer": "spricht",
+    "explanation": "'sprechen' is an irregular verb. In the 3rd person singular, the 'e' changes to 'i': 'er spricht'."
+  },
+  {
+    "id": "g11",
+    "category": "grammar",
+    "question_german": "_______ Sie bitte das Fenster!",
+    "question_english_hint": "_______ the window, please! (formal command)",
+    "options": ["Machen", "Mache", "Machst", "Macht"],
+    "correct_answer": "Machen",
+    "explanation": "For formal commands (Sie), the verb remains in the infinitive form followed by 'Sie'."
+  },
+  {
+    "id": "g12",
+    "category": "grammar",
+    "question_german": "Am Wochenende _______ wir ins Kino.",
+    "question_english_hint": "On the weekend we _______ to the cinema.",
+    "options": ["gehe", "gehen", "geht", "wir gehen"],
+    "correct_answer": "gehen",
+    "explanation": "In a main clause, the verb must be in position 2. Since 'Am Wochenende' is position 1, 'gehen' is position 2."
+  },
+  {
+    "id": "g13",
+    "category": "grammar",
+    "question_german": "Ich _______ morgen arbeiten.",
+    "question_english_hint": "I _______ work tomorrow. (must)",
+    "options": ["muss", "müssen", "musst", "müsst"],
+    "correct_answer": "muss",
+    "explanation": "The 1st person singular form of the modal verb 'müssen' is 'muss'."
+  },
+  {
+    "id": "g14",
+    "category": "grammar",
+    "question_german": "Wir kaufen heute im Supermarkt _______.",
+    "question_english_hint": "We are shopping in the supermarket today. (einkaufen)",
+    "options": ["an", "auf", "aus", "ein"],
+    "correct_answer": "ein",
+    "explanation": "'einkaufen' is a separable verb. The prefix 'ein' goes to the end of the sentence."
+  },
+  {
+    "id": "g15",
+    "category": "grammar",
+    "question_german": "Das ist Maria. _______ Auto ist neu.",
+    "question_english_hint": "This is Maria. _______ car is new. (Her)",
+    "options": ["Ihr", "Ihre", "Sein", "Seine"],
+    "correct_answer": "Ihr",
+    "explanation": "Maria is female. The possessive pronoun for 'her' is 'ihr'. Auto is neuter, so it remains 'Ihr'."
+  },
+  {
+    "id": "r1",
+    "category": "reading",
+    "question_german": "Text: 'Praxis Dr. Müller. Geöffnet: Mo-Fr 08:00 - 12:00 Uhr.' Wann ist die Praxis offen?",
+    "question_english_hint": "When is the clinic open?",
+    "options": ["Am Abend", "Am Vormittag", "Am Wochenende", "In der Nacht"],
+    "correct_answer": "Am Vormittag",
+    "explanation": "08:00 to 12:00 is 'am Vormittag' (in the morning). 'Wochenende' is weekend, 'Abend' is evening."
+  },
+  {
+    "id": "r2",
+    "category": "reading",
+    "question_german": "Text: 'Achtung! Gleis 3: Der Zug nach München hat 20 Minuten Verspätung.' Was passiert?",
+    "question_english_hint": "What is happening?",
+    "options": ["Der Zug fährt ab.", "Der Zug fällt aus.", "Der Zug ist pünktlich.", "Der Zug kommt später."],
+    "correct_answer": "Der Zug kommt später.",
+    "explanation": "'Verspätung' means delay, therefore 'der Zug kommt später' (the train comes later)."
+  },
+  {
+    "id": "r3",
+    "category": "reading",
+    "question_german": "SMS: 'Hallo Anna, ich habe heute keine Zeit. Gehen wir morgen ins Café? LG, Lisa.' Wann wollen sie sich treffen?",
+    "question_english_hint": "When do they want to meet?",
+    "options": ["Am Montag", "Am Wochenende", "Heute", "Morgen"],
+    "correct_answer": "Morgen",
+    "explanation": "Lisa writes 'ich habe heute keine Zeit' (no time today) and asks 'Gehen wir morgen ins Café?' (tomorrow)."
+  },
+  {
+    "id": "r4",
+    "category": "reading",
+    "question_german": "Schild an der Tür: 'Wir machen Urlaub. Ab 15. August sind wir wieder da.' Wann öffnet das Geschäft?",
+    "question_english_hint": "When does the shop open?",
+    "options": ["Am 1. August", "Am 15. August", "Im Juli", "Im September"],
+    "correct_answer": "Am 15. August",
+    "explanation": "'Ab 15. August sind wir wieder da' means 'From August 15 we are back'."
+  },
+  {
+    "id": "r5",
+    "category": "reading",
+    "question_german": "Supermarkt-Angebot: 'Heute: 1 Kilo Äpfel nur 1,50 Euro!' Was ist billig?",
+    "question_english_hint": "What is cheap?",
+    "options": ["Brot", "Fleisch", "Gemüse", "Obst"],
+    "correct_answer": "Obst",
+    "explanation": "Äpfel (apples) belong to the category 'Obst' (fruit)."
+  },
+  {
+    "id": "r6",
+    "category": "reading",
+    "question_german": "Wohnungsanzeige: '3 Zimmer, Balkon, keine Haustiere erlaubt.' Was darf man nicht mitbringen?",
+    "question_english_hint": "What are you not allowed to bring?",
+    "options": ["Einen Hund", "Katzen", "Kinder", "Möbel"],
+    "correct_answer": "Einen Hund",
+    "explanation": "'Keine Haustiere erlaubt' means no pets allowed. A dog (Hund) is a pet."
+  },
+  {
+    "id": "r7",
+    "category": "reading",
+    "question_german": "E-Mail: 'Sehr geehrte Frau Schmidt, Ihr Termin ist am Dienstag um 14 Uhr.' Wer schreibt?",
+    "question_english_hint": "Who is writing the email likely?",
+    "options": ["Ein Arzt oder Büro", "Ein Lehrer", "Eine Freundin", "Ihr Bruder"],
+    "correct_answer": "Ein Arzt oder Büro",
+    "explanation": "'Sehr geehrte Frau Schmidt' is highly formal and 'Termin' means appointment, implying a professional setting."
+  },
+  {
+    "id": "r8",
+    "category": "reading",
+    "question_german": "Schild: 'Rauchen verboten.' Was bedeutet das?",
+    "question_english_hint": "What does this sign mean?",
+    "options": ["Hier darf man keine Zigaretten rauchen.", "Hier gibt es Kaffee.", "Hier kann man essen.", "Hier kann man schlafen."],
+    "correct_answer": "Hier darf man keine Zigaretten rauchen.",
+    "explanation": "'Rauchen verboten' means smoking prohibited."
+  },
+  {
+    "id": "r9",
+    "category": "reading",
+    "question_german": "Wetterbericht: 'Am Wochenende bleibt es kalt, aber die Sonne scheint.' Wie wird das Wetter?",
+    "question_english_hint": "How will the weather be?",
+    "options": ["Bewölkt", "Kalt und regnerisch", "Kalt und sonnig", "Warm und regnerisch"],
+    "correct_answer": "Kalt und sonnig",
+    "explanation": "The text explicitly says 'kalt' (cold) and 'die Sonne scheint' (the sun is shining)."
+  },
+  {
+    "id": "r10",
+    "category": "reading",
+    "question_german": "Speisekarte: 'Tagessuppe: Tomate. Hauptgericht: Fisch mit Kartoffeln.' Was gibt es zu essen?",
+    "question_english_hint": "What is there to eat?",
+    "options": ["Fisch und Gemüse", "Fisch und Suppe", "Fleisch und Pommes", "Pizza und Suppe"],
+    "correct_answer": "Fisch und Suppe",
+    "explanation": "The menu mentions 'Tagessuppe' (soup) and 'Fisch' (fish)."
+  },
+  {
+    "id": "r11",
+    "category": "reading",
+    "question_german": "Notiz am Kühlschrank: 'Bitte kauf Brot und Milch. Danke, Tom.' Wer muss einkaufen?",
+    "question_english_hint": "Who has to go shopping?",
+    "options": ["Der Bäcker", "Der Mitbewohner", "Die Mutter", "Tom"],
+    "correct_answer": "Der Mitbewohner",
+    "explanation": "Tom wrote the note asking someone else (the roommate / Mitbewohner) to buy bread and milk."
+  },
+  {
+    "id": "r12",
+    "category": "reading",
+    "question_german": "Hotelinformation: 'Frühstück von 07:00 bis 10:00 Uhr im Erdgeschoss.' Wo gibt es das Frühstück?",
+    "question_english_hint": "Where is the breakfast?",
+    "options": ["Im Erdgeschoss", "Im Garten", "Im Restaurant draußen", "Im Zimmer"],
+    "correct_answer": "Im Erdgeschoss",
+    "explanation": "'Erdgeschoss' means ground floor."
+  },
+  {
+    "id": "r13",
+    "category": "reading",
+    "question_german": "Schild an der Kasse: 'Bitte nur mit Karte zahlen. Kein Bargeld.' Wie kann man bezahlen?",
+    "question_english_hint": "How can you pay?",
+    "options": ["Mit Bankkarte", "Mit Bargeld", "Mit dem Handy", "Später"],
+    "correct_answer": "Mit Bankkarte",
+    "explanation": "'Nur mit Karte zahlen' means pay by card only. 'Kein Bargeld' means no cash."
+  },
+  {
+    "id": "r14",
+    "category": "reading",
+    "question_german": "Einladung: 'Ich lade dich zu meinem Geburtstag ein. Komm am Samstag um 19 Uhr.' Was feiert die Person?",
+    "question_english_hint": "What is the person celebrating?",
+    "options": ["Ein Konzert", "Ein neues Haus", "Eine Hochzeit", "Einen Geburtstag"],
+    "correct_answer": "Einen Geburtstag",
+    "explanation": "'Geburtstag' means birthday."
+  },
+  {
+    "id": "r15",
+    "category": "reading",
+    "question_german": "E-Mail: 'Hallo Paul, der Deutschkurs beginnt heute um 18 Uhr. Bitte bring das Kursbuch mit.' Was braucht Paul?",
+    "question_english_hint": "What does Paul need?",
+    "options": ["Das Kursbuch", "Ein Wörterbuch", "Eine Zeitung", "Einen Stift"],
+    "correct_answer": "Das Kursbuch",
+    "explanation": "The email specifically asks him to bring the 'Kursbuch' (course book)."
+  }
+]

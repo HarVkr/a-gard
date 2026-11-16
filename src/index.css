@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --color-primary: #2328be;
+  --color-accent: #ffc233;
+  --color-ink: #181c7b;
+  --color-muted-ink: #071b36;
+  --color-surface: #f7f7f5;
+  --shadow-soft: 0 10px 28px -6px #0000001a;
+  --shadow-accent: 0 10px 26px -6px #ffc63666;
+}
+
+@layer base {
+  html {
+    font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    color: #181c7b;
+  }
+}
+
+@keyframes option-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes option-success {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-option-shake {
+  animation: option-shake 360ms cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-option-success {
+  animation: option-success 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-up {
+  animation: fade-up 300ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-option-shake,
+  .animate-option-success,
+  .animate-fade-up {
+    animation: none;
+  }
+}

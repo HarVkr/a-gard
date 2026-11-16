@@ -1,0 +1,6 @@
+{
+  "name": "Globio Goethe A1 Readiness Check",
+  "description": "A calibrated 15-question Goethe-Zertifikat A1 diagnostic test across Vocabulary, Grammar, and Reading to help learners verify exam readiness before booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
