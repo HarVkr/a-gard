@@ -4,6 +4,7 @@
  */
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import questionBankJson from '../resources/45-questions-bank-2_bb0ff086.json';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { QuizView } from './components/QuizView';
@@ -17,13 +18,9 @@ import {
 
 type Screen = 'hero' | 'quiz' | 'results';
 
-const QUESTIONS_DATASET_URL = '/assets/aistudio/45-questions-bank-2_bb0ff086.json';
+const QUESTION_BANK = questionBankJson as RawQuestion[];
 
 export default function App() {
-  const [bank, setBank] = useState<RawQuestion[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadError, setLoadError] = useState<string | null>(null);
-
   const [screen, setScreen] = useState<Screen>('hero');
   const [roundNumber, setRoundNumber] = useState(1);
   const [usedIds, setUsedIds] = useState<string[]>([]);
@@ -32,30 +29,6 @@ export default function App() {
   const [completedRounds, setCompletedRounds] = useState<CompletedRound[]>([]);
 
   const autostartHandledRef = useRef(false);
-
-  const loadQuestionBank = useCallback(async () => {
-    setIsLoading(true);
-    setLoadError(null);
-    try {
-      const response = await fetch(QUESTIONS_DATASET_URL);
-      if (!response.ok) {
-        throw new Error(`Unable to load question bank (${response.status})`);
-      }
-      const data: unknown = await response.json();
-      if (!Array.isArray(data) || data.length === 0) {
-        throw new Error('Question bank is empty or invalid.');
-      }
-      setBank(data as RawQuestion[]);
-    } catch (err) {
-      setLoadError(err instanceof Error ? err.message : 'Failed to load questions.');
-    } finally {
-      setIsLoading(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    void loadQuestionBank();
-  }, [loadQuestionBank]);
 
   const startRound = useCallback(
     (sourceBank: RawQuestion[], currentUsedIds: string[], nextRoundNumber: number) => {
@@ -76,24 +49,24 @@ export default function App() {
   );
 
   useEffect(() => {
-    if (autostartHandledRef.current || isLoading || bank.length === 0) {
+    if (autostartHandledRef.current || QUESTION_BANK.length === 0) {
       return;
     }
     const params = new URLSearchParams(window.location.search);
     if (params.get('autostart') === '1') {
       autostartHandledRef.current = true;
-      startRound(bank, [], 1);
+      startRound(QUESTION_BANK, [], 1);
     }
-  }, [bank, isLoading, startRound]);
+  }, [startRound]);
 
   const handleStartFirstCheck = () => {
-    if (bank.length === 0) return;
-    startRound(bank, [], 1);
+    if (QUESTION_BANK.length === 0) return;
+    startRound(QUESTION_BANK, [], 1);
   };
 
   const handleStartNextRound = () => {
-    if (bank.length === 0) return;
-    startRound(bank, usedIds, roundNumber + 1);
+    if (QUESTION_BANK.length === 0) return;
+    startRound(QUESTION_BANK, usedIds, roundNumber + 1);
   };
 
   const handleGoHome = () => {
@@ -143,7 +116,7 @@ export default function App() {
       <Header
         screen={screen}
         roundNumber={roundNumber}
-        isLoading={isLoading}
+        isLoading={false}
         onStart={handleStartFirstCheck}
         onGoHome={handleGoHome}
       />
@@ -151,9 +124,9 @@ export default function App() {
       {screen === 'hero' && (
         <HeroSection
           onStart={handleStartFirstCheck}
-          isLoading={isLoading}
-          loadError={loadError}
-          onRetryLoad={() => void loadQuestionBank()}
+          isLoading={false}
+          loadError={null}
+          onRetryLoad={() => undefined}
         />
       )}
 

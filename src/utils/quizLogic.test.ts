@@ -14,7 +14,7 @@ import {
 
 const bankPath = path.resolve(
   process.cwd(),
-  'public/assets/aistudio/45-questions-bank-2_bb0ff086.json',
+  'resources/45-questions-bank-2_bb0ff086.json',
 );
 const questionBank: RawQuestion[] = JSON.parse(fs.readFileSync(bankPath, 'utf-8'));
 
