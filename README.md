@@ -1,13 +1,13 @@
-# Globio — Goethe-Zertifikat A1 Readiness Diagnostic
+# Gard - Goethe-Zertifikat A1 Readiness Diagnostic
 
-> A calibrated, anti-fluke diagnostic web application engineered to help Indian professionals verify their Goethe-Zertifikat A1 readiness before risking the ₹10,000 official exam fee.
+> A calibrated, diagnostic web application engineered to help Indian professionals verify their Goethe-Zertifikat A1 readiness before risking their time and the ₹10,000 official exam fee.
 
 ---
 
 ## 1. Project Overview & The Problem
 
 ### Product Vision
-**Globio** helps Indian professionals navigate career and life transitions to Germany. A mandatory early milestone for visa pathways and family reunification is passing the **Goethe-Zertifikat A1 (Start Deutsch 1)** examination.
+**Gard** helps Indian professionals navigate career and life transitions to Germany. A mandatory early milestone for visa pathways and family reunification is passing the **Goethe-Zertifikat A1 (Start Deutsch 1)** examination.
 
 ### The Problem
 Candidates frequently book their official Goethe-Institut exam slot prematurely based on unstructured self-study or casual app streaks. Failing the exam carries a steep penalty:
@@ -44,7 +44,7 @@ Every question and distractor was intentionally constrained so the diagnostic ne
 
 ## 3. Diagnostic Methodology: The "Exam Impact"
 
-A 5-minute web diagnostic cannot reliably grade open-ended spoken interviews or handwritten essays without introducing AI grading latency or microphone friction. Instead, Globio tests **Vocabulary**, **Grammar**, and **Reading** as high-signal **predictive proxies** for all four modules of the official Goethe-Institut A1 exam:
+A 5-minute web diagnostic cannot reliably grade open-ended spoken interviews or handwritten essays without introducing AI grading latency or microphone friction. Instead, Gard tests **Vocabulary**, **Grammar**, and **Reading** as high-signal **predictive proxies** for all four modules of the official Goethe-Institut A1 exam:
 
 | Diagnostic Pillar | Predictive Exam Proxy | Exam Impact Rationale |
 | :--- | :--- | :--- |
