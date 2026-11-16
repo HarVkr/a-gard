@@ -23,7 +23,7 @@ export function Header({
           type="button"
           onClick={onGoHome}
           className="group flex items-center gap-2.5 text-left focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2328be] rounded-lg whitespace-nowrap shrink-0 cursor-pointer"
-          aria-label="Globio home"
+          aria-label="Gard — Goethe Readiness Diagnostic home"
         >
           <span
             aria-hidden="true"
@@ -45,7 +45,7 @@ export function Header({
               />
             </svg>
           </span>
-          <span className="text-xl font-semibold tracking-tight text-[#181c7b]">globio.</span>
+          <span className="text-xl font-semibold tracking-tight text-[#181c7b]">Gard.</span>
         </button>
 
         {/* Zone 2: Clean single-line navigation / journey context */}

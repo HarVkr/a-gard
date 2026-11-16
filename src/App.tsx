@@ -152,7 +152,7 @@ export default function App() {
       )}
 
       <footer className="mt-auto border-t border-[#181c7b]/10 bg-white py-5 text-center text-xs text-[#071b36]/60">
-        Globio · Goethe-Zertifikat A1 Readiness Diagnostic
+        Gard · Goethe Readiness Diagnostic (Goethe-Zertifikat A1)
       </footer>
     </div>
   );
