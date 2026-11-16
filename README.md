@@ -15,7 +15,7 @@ Candidates frequently book their official Goethe-Institut exam slot prematurely 
 - **Timeline Delay:** Re-booking exam slots in high-demand Indian test centers can set migration timelines back by weeks or months.
 
 ### The Solution
-A calm, gamified **"Duolingo-lite" readiness diagnostic** that evaluates a learner across **15 randomized questions** (5 Vocabulary, 5 Grammar, 5 Reading) with immediate, single-attempt feedback and zero retries. Rather than giving an uncalibrated raw score, the application outputs a clear **Readiness Verdict** (**Green**, **Yellow**, or **Red**) paired with a bottleneck-aware study recommendation—helping learners decide whether to book immediately or reinforce a weak foundation first.
+A calm, gamified **readiness diagnostic** that evaluates a learner across **15 randomized questions** (5 Vocabulary, 5 Grammar, 5 Reading) with immediate, single-attempt feedback and zero retries. Rather than giving an uncalibrated raw score, the application outputs a clear **Readiness Verdict** (**Green**, **Yellow**, or **Red**) paired with a bottleneck-aware study recommendation—helping learners decide whether to book immediately or reinforce a weak foundation first.
 
 ---
 
