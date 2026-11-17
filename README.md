@@ -31,14 +31,14 @@ Reviewers can find the official Goethe-Institut reference PDFs in [`public/offic
 ### How Official Constraints Shaped the Dataset
 Every question and distractor was intentionally constrained so the diagnostic neither under-tests nor unfairly leaks A2/B1 concepts:
 
-- **Vocabulary (15 items):** Grounded strictly in the official A1 Wortliste. Both target answers and distractors stay strictly within everyday A1 lexical domains—time expressions (Samstag), urban navigation (Bahnhof), food (Milch), and basic survival terms. To mirror the heavy visual context used in the real exam's Hören and Sprechen modules, 7 of these questions utilize explicit image prompts (e.g., train stations, pharmacies, food).
+- **Vocabulary (15 items):** Grounded strictly in the official A1 Wortliste. Both target answers and distractors stay strictly within everyday A1 lexical domains such as time expressions (Samstag), urban navigation (Bahnhof), food (Milch), and basic survival terms. To mirror the heavy visual context used in the real exam's Hören and Sprechen modules, 7 of these questions utilize explicit image prompts (e.g., train stations, pharmacies, food).
 - **Grammar (15 items):** Targets high-frequency A1 morphosyntax defined in the *Prüfungsziele*:
   - *Verbzweitstellung* (V2 word order in main clauses after fronted adverbials)
   - Present-tense regular/irregular conjugation (*sein*, *haben*, *sprechen*, modal *müssen*)
   - Separable prefix verbs (*einkaufen*) and formal imperatives (*Sie*)
   - Nominative, accusative (*einen*), and basic dative prepositions (*mit dem*, *um*)
   - Explicitly **excludes** A2+ structures such as *Präteritum* narration or subordinate *weil/dass* clauses.
-- **Reading (15 items):** Mirrors real *Modellsatz* comprehension formats—clinic opening hours, Deutsche Bahn delay announcements, short SMS invitations, supermarket flyers, apartment notices, and prohibition signs—testing practical inference under time pressure.
+- **Reading (15 items):** Mirrors real *Modellsatz* comprehension formats such as clinic opening hours, Deutsche Bahn delay announcements, short SMS invitations, supermarket flyers, apartment notices, and prohibition signs, testing practical inference under time pressure.
 
 ---
 
@@ -101,7 +101,7 @@ return 'Borderline';                                           // Yellow
 ## 5. Actionable Feedback & Pedagogical Tie-Breakers
 
 ### Preventing Cognitive Overload
-Anxious exam candidates rarely act on a wall of 10–15 separate error logs. To respect learner attention and fulfill the requirement of giving **2–3 concrete things to practice**, the **Practice Focus** section intentionally surfaces **only one card** for the user's **single weakest category** paired with:
+Anxious exam candidates rarely act on a wall of 10-15 separate error logs. To respect learner attention and fulfill the requirement of giving **2-3 concrete things to practice**, the **Practice Focus** section intentionally surfaces **only one card** for the user's **single weakest category** paired with:
 1. Its **Exam Impact** warning callout.
 2. Exactly **3 targeted, high-leverage practice tips** tailored to that skill area.
 
