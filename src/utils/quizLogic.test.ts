@@ -250,3 +250,40 @@ test('Aggregated Round 2 STATE RED (Not Ready) applies tie-breaker when multiple
   );
   assert.deepEqual(result.practiceFocus.practiceTips, CATEGORY_PRACTICE_TIPS.vocabulary);
 });
+
+test('Only the 7 specified vocabulary questions define image_url and all map to valid public/images assets', () => {
+  const expectedImageUrls: Record<string, string> = {
+    v1: '/images/milch.jpg',
+    v3: '/images/apotheke.jpg',
+    v4: '/images/bahnhof.jpg',
+    v7: '/images/jacke.jpg',
+    v8: '/images/gemuese.jpg',
+    v9: '/images/kasse.jpg',
+    v12: '/images/bett.jpg',
+  };
+
+  for (const q of questionBank) {
+    if (q.id in expectedImageUrls) {
+      assert.equal(q.image_url, expectedImageUrls[q.id]);
+      const diskPath = path.resolve(process.cwd(), 'public', q.image_url.replace(/^\//, ''));
+      assert.equal(fs.existsSync(diskPath), true, `Missing asset for ${q.id}: ${diskPath}`);
+      assert.ok(fs.statSync(diskPath).size > 0, `Empty asset for ${q.id}: ${diskPath}`);
+    } else {
+      assert.equal('image_url' in q, false, `Unexpected image_url key on question ${q.id}`);
+    }
+  }
+
+  // Ensure sampled rounds preserve image_url across all 45 questions
+  const rng = seededRng(99);
+  const r1 = sampleQuizQuestions(questionBank, [], rng);
+  const r2 = sampleQuizQuestions(questionBank, r1.nextUsedIds, rng);
+  const r3 = sampleQuizQuestions(questionBank, r2.nextUsedIds, rng);
+  const allSampled = [...r1.questions, ...r2.questions, ...r3.questions];
+
+  for (const [id, expectedUrl] of Object.entries(expectedImageUrls)) {
+    const sampled = allSampled.find((q) => q.id === id);
+    assert.ok(sampled, `Expected ${id} to be sampled`);
+    assert.equal(sampled.image_url, expectedUrl);
+  }
+});
+

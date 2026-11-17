@@ -8,6 +8,7 @@ export interface RawQuestion {
   options: string[];
   correct_answer: string;
   explanation: string;
+  image_url?: string;
 }
 
 export interface QuizQuestion extends RawQuestion {

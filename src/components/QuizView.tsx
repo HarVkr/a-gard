@@ -38,6 +38,7 @@ export function QuizView({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [lastAnimatedId, setLastAnimatedId] = useState<string | null>(null);
   const [incompleteWarning, setIncompleteWarning] = useState(false);
+  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
 
   const totalQuestions = questions.length;
   const currentQuestion = questions[currentIndex];
@@ -188,8 +189,28 @@ export function QuizView({
           {currentQuestion.question_english_hint}
         </p>
 
+        {currentQuestion.image_url && !failedImages[currentQuestion.id] && (
+          <div
+            key={currentQuestion.id}
+            className="mt-5 overflow-hidden rounded-2xl border border-[#181c7b]/10 bg-white p-2.5 shadow-[0_6px_18px_-6px_#00000014]"
+          >
+            <img
+              src={currentQuestion.image_url}
+              alt="Visual clue for this vocabulary question"
+              loading="eager"
+              onError={() =>
+                setFailedImages((prev) => ({
+                  ...prev,
+                  [currentQuestion.id]: true,
+                }))
+              }
+              className="mx-auto max-h-56 w-auto max-w-full rounded-xl object-contain sm:max-h-64"
+            />
+          </div>
+        )}
+
         {/* Answer Options */}
-        <div className="mt-7 grid grid-cols-1 gap-3.5" role="group" aria-label="Answer options">
+        <div className="mt-6 grid grid-cols-1 gap-3.5" role="group" aria-label="Answer options">
           {currentQuestion.shuffledOptions.map((option, idx) => {
             const isSelected = selectedAnswer === option;
             const isOptionCorrect = option === currentQuestion.correct_answer;

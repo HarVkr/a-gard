@@ -6,7 +6,8 @@
     "question_english_hint": "Which word fits? I drink my coffee with _______.",
     "options": ["Apfel", "Wasser", "Milch", "Brot"],
     "correct_answer": "Milch",
-    "explanation": "'Milch' means milk. 'Brot' is bread, 'Apfel' is apple."
+    "explanation": "'Milch' means milk. 'Brot' is bread, 'Apfel' is apple.",
+    "image_url": "/images/milch.jpg"
   },
   {
     "id": "v2",
@@ -24,7 +25,8 @@
     "question_english_hint": "Where do you buy medicine? In the _______.",
     "options": ["Post", "Schule", "Apotheke", "Bäckerei"],
     "correct_answer": "Apotheke",
-    "explanation": "'Apotheke' is pharmacy. 'Bäckerei' is bakery, 'Post' is post office."
+    "explanation": "'Apotheke' is pharmacy. 'Bäckerei' is bakery, 'Post' is post office.",
+    "image_url": "/images/apotheke.jpg"
   },
   {
     "id": "v4",
@@ -33,7 +35,8 @@
     "question_english_hint": "The train departs at the _______.",
     "options": ["Supermarkt", "Bahnhof", "Flughafen", "Krankenhaus"],
     "correct_answer": "Bahnhof",
-    "explanation": "'Bahnhof' means train station. 'Flughafen' is airport, 'Krankenhaus' is hospital (not typically used for departures)."
+    "explanation": "'Bahnhof' means train station. 'Flughafen' is airport, 'Krankenhaus' is hospital (not typically used for departures).",
+    "image_url": "/images/bahnhof.jpg"
   },
   {
     "id": "v5",
@@ -60,7 +63,8 @@
     "question_english_hint": "It is cold. I need a _______.",
     "options": ["Buch", "Jacke", "Sonnenbrille", "Tasche"],
     "correct_answer": "Jacke",
-    "explanation": "'Jacke' means jacket."
+    "explanation": "'Jacke' means jacket.",
+    "image_url": "/images/jacke.jpg"
   },
   {
     "id": "v8",
@@ -69,7 +73,8 @@
     "question_english_hint": "We are eating meat with _______.",
     "options": ["Gemüse", "Saft", "Tee", "Wasser"],
     "correct_answer": "Gemüse",
-    "explanation": "'Gemüse' means vegetables."
+    "explanation": "'Gemüse' means vegetables.",
+    "image_url": "/images/gemuese.jpg"
   },
   {
     "id": "v9",
@@ -78,7 +83,8 @@
     "question_english_hint": "To pay, I go to the _______.",
     "options": ["Fenster", "Tür", "Kasse", "Wand"],
     "correct_answer": "Kasse",
-    "explanation": "'Kasse' is the checkout or cash register."
+    "explanation": "'Kasse' is the checkout or cash register.",
+    "image_url": "/images/kasse.jpg"
   },
   {
     "id": "v10",
@@ -105,7 +111,8 @@
     "question_english_hint": "Which word fits? I sleep in the _______.",
     "options": ["Kühlschrank", "Bett", "Herd", "Schrank"],
     "correct_answer": "Bett",
-    "explanation": "'Bett' is bed. 'Kühlschrank' is fridge."
+    "explanation": "'Bett' is bed. 'Kühlschrank' is fridge.",
+    "image_url": "/images/bett.jpg"
   },
   {
     "id": "v13",
