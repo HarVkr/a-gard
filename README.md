@@ -21,7 +21,7 @@ A calm, gamified **readiness diagnostic** that evaluates a learner across **15 r
 
 ## 2. Data Engineering & Official Sourcing
 
-The diagnostic is powered by a custom **45-question JSON dataset** (`resources/45-questions-bank-2_bb0ff086.json` — 15 Vocabulary, 15 Grammar, and 15 Reading items) engineered strictly to official Goethe-Institut A1 specifications.
+The diagnostic is powered by a custom **45-question JSON dataset** (`resources/45-questions-bank-2_bb0ff086.json` - 15 Vocabulary, 15 Grammar, and 15 Reading items) engineered strictly to official Goethe-Institut A1 specifications.
 
 ### Official Grounding Sources
 Reviewers can find the official Goethe-Institut reference PDFs in [`public/official_references/`](./public/official_references/):
@@ -31,7 +31,7 @@ Reviewers can find the official Goethe-Institut reference PDFs in [`public/offic
 ### How Official Constraints Shaped the Dataset
 Every question and distractor was intentionally constrained so the diagnostic neither under-tests nor unfairly leaks A2/B1 concepts:
 
-- **Vocabulary (15 items):** Grounded strictly in the official A1 *Wortliste*. Both target answers and distractors stay strictly within everyday A1 lexical domains—time expressions (*Samstag*, *Monate*), urban navigation (*Bahnhof*, *Apotheke*), food & shopping (*Milch*, *Kasse*, *Gemüse*), and basic survival terms (*Arzt*, *Briefmarke*).
+- **Vocabulary (15 items):** Grounded strictly in the official A1 Wortliste. Both target answers and distractors stay strictly within everyday A1 lexical domains—time expressions (Samstag), urban navigation (Bahnhof), food (Milch), and basic survival terms. To mirror the heavy visual context used in the real exam's Hören and Sprechen modules, 7 of these questions utilize explicit image prompts (e.g., train stations, pharmacies, food).
 - **Grammar (15 items):** Targets high-frequency A1 morphosyntax defined in the *Prüfungsziele*:
   - *Verbzweitstellung* (V2 word order in main clauses after fronted adverbials)
   - Present-tense regular/irregular conjugation (*sein*, *haben*, *sprechen*, modal *müssen*)
@@ -54,12 +54,17 @@ A 5-minute web diagnostic cannot reliably grade open-ended spoken interviews or 
 
 Whenever a weakness is flagged, the Results Dashboard surfaces the corresponding **Exam Impact** warning so learners understand *why* that score threatens their ₹10,000 exam attempt.
 
+### Isolating the Variable (Construct Validity)
+A common flaw in language diagnostics is contaminated data e.g., a learner fails a Grammar question not because they don't know the grammar rule, but because they couldn't read the vocabulary in the prompt.
+To ensure strict data purity, the UI pairs the German prompt with an English hint. This acts as a set of training wheels that isolates the variable being tested, ensuring that a low Grammar score genuinely reflects a syntax deficit, rather than a hidden vocabulary bottleneck.
+
+
 ---
 
 ## 4. Scoring Algorithm & The 2-Round Verification Loop
 
 ### The Anti-Fluke Verification
-A single 15-question quiz (5 items per category) is fast enough to prevent drop-off, but small sample sizes carry statistical noise—a learner can get lucky on 1–2 multiple-choice guesses and falsely clear an 80% threshold.
+A single 15-question quiz (5 items per category) is fast enough to prevent drop-off, but small sample sizes carry statistical noise, a learner can get lucky on 1–2 multiple-choice guesses and falsely clear an 80% threshold.
 
 To eliminate false positives, the Round 1 Results Dashboard presents a **"Verify My Score (Round 2)"** hook:
 - Clicking it launches a second 15-question round sampled from the **remaining unused pool** in the 45-question dataset (`0%` question overlap with Round 1, with randomized option order in every round).
@@ -96,7 +101,7 @@ return 'Borderline';                                           // Yellow
 ## 5. Actionable Feedback & Pedagogical Tie-Breakers
 
 ### Preventing Cognitive Overload
-Anxious exam candidates rarely act on a wall of 10–15 separate error logs. To respect learner attention and fulfill the requirement of giving **2–3 concrete things to practice**, the **Practice Focus** section intentionally surfaces **only one card**—for the user's **single weakest category**—paired with:
+Anxious exam candidates rarely act on a wall of 10–15 separate error logs. To respect learner attention and fulfill the requirement of giving **2–3 concrete things to practice**, the **Practice Focus** section intentionally surfaces **only one card** for the user's **single weakest category** paired with:
 1. Its **Exam Impact** warning callout.
 2. Exactly **3 targeted, high-leverage practice tips** tailored to that skill area.
 
