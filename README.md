@@ -15,7 +15,7 @@ Candidates frequently book their official Goethe-Institut exam slot prematurely 
 - **Timeline Delay:** Re-booking exam slots in high-demand Indian test centers can set migration timelines back by weeks or months.
 
 ### The Solution
-A calm, gamified **readiness diagnostic** that evaluates a learner across **15 randomized questions** (5 Vocabulary, 5 Grammar, 5 Reading) with immediate, single-attempt feedback and zero retries. Rather than giving an uncalibrated raw score, the application outputs a clear **Readiness Verdict** (**Green**, **Yellow**, or **Red**) paired with a bottleneck-aware study recommendation—helping learners decide whether to book immediately or reinforce a weak foundation first.
+A calm, gamified **readiness diagnostic** that evaluates a learner across **15 randomized questions** (5 Vocabulary, 5 Grammar, 5 Reading) with immediate, single-attempt feedback and zero retries. Rather than giving an uncalibrated raw score, the application outputs a clear **Readiness Verdict** (**Green**, **Yellow**, or **Red**) paired with a bottleneck-aware study recommendation, helping learners decide whether to book immediately or reinforce a weak foundation first.
 
 ---
 
@@ -25,8 +25,8 @@ The diagnostic is powered by a custom **45-question JSON dataset** (`resources/4
 
 ### Official Grounding Sources
 Reviewers can find the official Goethe-Institut reference PDFs in [`public/official_references/`](./public/official_references/):
-- `Goethe-Institut-A1-sample-paper-01.pdf` (*Modellsatz* — official A1 sample examination paper)
-- `Pruefungsziele_Testbeschreibung_A1_SD1.pdf` (*Prüfungsziele & Testbeschreibung* — official A1 curriculum and exam specification)
+- `Goethe-Institut-A1-sample-paper-01.pdf` (*Modellsatz* - official A1 sample examination paper)
+- `Pruefungsziele_Testbeschreibung_A1_SD1.pdf` (*Prüfungsziele & Testbeschreibung* - official A1 curriculum and exam specification)
 
 ### How Official Constraints Shaped the Dataset
 Every question and distractor was intentionally constrained so the diagnostic neither under-tests nor unfairly leaks A2/B1 concepts:
